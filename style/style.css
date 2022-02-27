@@ -1,6 +1,29 @@
-@import url('https://fonts.google.com/specimen/Inter');
-@import url('https://fonts.google.com/specimen/Lexend+Deca');
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/Inter-Bold.woff2') format('woff2'),
+        url('../font/Inter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/Inter-Regular.woff2') format('woff2'),
+        url('../font/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../font/LexendDeca-Regular.woff2') format('woff2'),
+        url('../font/LexendDeca-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 * {
     margin: 0;
@@ -20,7 +43,7 @@ body {
     height: 480px;
     margin: auto;
     position: relative;
-    top: 230px;
+    top: 190px;
 }
 
 .card{
@@ -39,12 +62,12 @@ body {
 }
 
 h1.main-title{
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    font-family: 'Inter';
+    font-weight: bold;
     color: white;
     padding-bottom: 20px;
     font-size: 35px;
-    width: 360px;
+    width: 370px;
     height: auto;
 }
 
@@ -53,8 +76,8 @@ h1 .insights{
 }
 
 .card-container .main-paragraph{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-family: 'Inter';
+    font-weight: normal;
     color: hsla(0, 0%, 100%, 0.75);
     line-height: 1.7;
     letter-spacing: 0.5px;
@@ -70,15 +93,15 @@ h1 .insights{
 }
 
 h2{
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    font-family: 'Inter';
+    font-weight: bold;
     color: white;
     padding-bottom: 5px;
 }
 
 .headings-paragraph{
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
+    font-family: 'Lexend Deca';
+    font-weight: normal;
     color: hsla(0, 0%, 100%, 0.6);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -100,6 +123,20 @@ h2{
     width: 100%;
 }
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: absolute;
+    left: 43%;
+    bottom: 18%;
+    color: #ffff;
+    font-family: 'Inter', sans-serif; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
 /* Responsive view */
 
 @media screen and (max-width: 375px) {
@@ -111,7 +148,7 @@ h2{
         height: 100vh;
         max-width: 340px;
         position: relative;
-        top: 30px;
+        top: 0;
     }
 
     .card{
@@ -162,6 +199,13 @@ h2{
         background-color: rgba(103, 21, 128, 0.6);
         overflow: hidden;
         border-radius: 3px;
+    }
+
+    footer {
+        position: relative;
+        left: -30%;
+        width: 110%;
+        bottom: 10px;
     }
 }
 
